@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전자계산기</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1 class="text-center">JAVASCRIPT 계산기 by Hoyeon Jang</h1>
+  <p class="text-center">자바스크립트도 만든 간단한 계산기</p>
+  <div class="container">
+    <header>
+      <p id="result">0</p>
+    </header>
+    <div class="line">
+      <button type="button" class="ac" onclick="reset()">AC</button>
+      <button type="button" onclick="calculating('/')">/</button>
+    </div>
+    <div class="line">
+      <button type="button" onclick="calculating('7')">7</button>
+      <button type="button" onclick="calculating('8')">8</button>
+      <button type="button" onclick="calculating('9')">9</button>
+      <button type="button" onclick="calculating('*')">X</button>
+    </div>
+    <div class="line">
+      <button type="button" onclick="calculating('4')">4</button>
+      <button type="button" onclick="calculating('5')">5</button>
+      <button type="button" onclick="calculating('6')">6</button>
+      <button type="button" onclick="calculating('-')">-</button>
+    </div>
+    <div class="line">
+      <button type="button" onclick="calculating('1')">1</button>
+      <button type="button" onclick="calculating('2')">2</button>
+      <button type="button" onclick="calculating('3')">3</button>
+      <button type="button" onclick="calculating('+')">+</button>
+    </div>
+    <div class="line">
+      <button type="button" class="zero" onclick="calculating('0')">0</button>
+      <button type="button" onclick="calculating('.')">.</button>
+      <button type="button" onclick="resulting()">=</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
